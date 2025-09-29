@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para os fieldsets em todas as páginas */
+fieldset {
+    width: 500px; /* Alterado para diminuir o formulário de cadastro */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+
+/* Estilos para as legendas dos fieldsets */
+legend {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    grid-column: span 2;
+    padding: 0 10px;
+}
+
+/* Estilos para os campos do formulário */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+.linha-agrupada {
+    grid-column: span 2;
+    display: flex;
+    gap: 15px;
+}
+
+.linha-agrupada .campo {
+    flex: 1;
+}
+
+.linha-agrupada .uf {
+    max-width: 80px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+input {
+    padding: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para a seção de botões */
+.botoes {
+    grid-column: span 2;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.botoes input, .botoes button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Cores dos botões */
+input[type="submit"], input[type="reset"], .botoes button[type="submit"] {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, .botoes button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos para a tabela de listagem */
+.table-container {
+    margin: 20px auto;
+    width: 700px;
+}
+
+.listagem-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.listagem-table th, .listagem-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.listagem-table th {
+    background-color: #4cae4c;
+    color: white;
+}
+
+.listagem-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ajustes para os botões de ação na tabela */
+.listagem-table img.icone {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Estilo para o formulário de busca */
+.busca-container {
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Classe para o container do login, para centralizar os forms */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
